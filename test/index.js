@@ -25,5 +25,5 @@ class Scratch3Hello{
         alert(args.TEXT)
     }
 }
-Scratch.extensions.register(new Scratch3Hellos())
+Scratch.extensions.register(new Scratch3Hello())
 

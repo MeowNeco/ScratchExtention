@@ -34,4 +34,4 @@ class Analyzer {
         console.log(Result)
     }
 }
-Scratch.extensions.register(new Scratch3Analyzer());
+Scratch.extensions.register(new Analyzer());

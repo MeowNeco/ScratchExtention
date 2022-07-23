@@ -10,15 +10,15 @@ class Scratch3Analyzer{
             blocks:[
                 {
                     opcode:"analyse",
-                    blockType:BlockType.REPORTER,
+                    blockType:Scratch.BlockType.REPORTER,
                     text:'[TEXT]を解析する（[ID]）',
                     arguments:{
                         TEXT:{
-                            type:ArgumentType.STRING,
+                            type:Scratch.ArgumentType.STRING,
                             defaultValue:"吾輩は猫である"
                         },
                         ID:{
-                            type:ArgumentType.STRING,
+                            type:Scratch.ArgumentType.STRING,
                             defaultValue:"ここにID"
                         }
 

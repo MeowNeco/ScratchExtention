@@ -24,7 +24,7 @@ class Analyzer {
                 }
             ]
 
-        };
+        }
     }
     analyse(args){
         let Result = new XMLHttpRequest();

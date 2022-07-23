@@ -31,7 +31,8 @@ class Analyzer {
         Result.open('POST', 'https://labs.goo.ne.jp/api/morph');
         Result.setRequestHeader('content-type', 'application/x-www-form-urlencoded');
         Result.send('app_id='+(args.ID)+'&sentence='+(args.TEXT));
-        console.log(Result)
+        console.log(Result);
+        return(Result)
     }
 }
 Scratch.extensions.register(new Analyzer());

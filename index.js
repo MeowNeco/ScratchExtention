@@ -1,6 +1,4 @@
-
-
-class Scratch3Analyzer{
+class Analyzer {
     constructor(){}
     
     getInfo(){

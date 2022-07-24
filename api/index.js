@@ -37,4 +37,4 @@ Json.setRequestHeader('content-type', 'application/x-www-form-urlencoded');
 Json.send('app_id='+args.ID+'&sentence='+args.TEXT);
     }
 }
-Scratch.extensions.register(new Api())
+Scratch.extensions.register(new Api());

@@ -7,7 +7,7 @@ class Api{
             name:'Api',
             blocks:[
                 {
-                    opecode:"morphologicalAnalyzer",
+                    opcode:"morphologicalAnalyzer",
                     blockType:Scratch.BlockType.REPORTER,
                     text:"[TEXT]を解析[ID]",
                     arguments:{

@@ -1,20 +1,19 @@
-class Scratch3Api{
-    constructor(runtime){
-        this.runtime=runtime;
-    }
+class Api{
+    constructor(){}
+    
     getInfo () {
         return{
             id:"api",
-            name:'api',
+            name:'Api',
             blocks:[
                 {
-                    opecode:"MorphologicalAnalyzer",
+                    opecode:"morphologicalAnalyzer",
                     blockType:Scratch.BlockType.REPORTER,
                     text:"[TEXT]を解析[ID]",
                     arguments:{
                         TEXT:{
-                        type:Scratch.ArgumentType.STRING,
-                        defaultValue:"こんにちは"
+                            type:Scratch.ArgumentType.STRING,
+                            defaultValue:"こんにちは"
                         },
                         ID:{
                             type:Scratch.ArgumentType.STRING,
@@ -23,9 +22,9 @@ class Scratch3Api{
                     } 
                 }
             ]
-        };
+        }
     }
-    MorphologicalAnalyzer(args){
+    morphologicalAnalyzer(args){
         let Sentence="吾輩は猫である"
 var Json = new XMLHttpRequest();
 Json.onload = function(){
@@ -38,4 +37,4 @@ Json.setRequestHeader('content-type', 'application/x-www-form-urlencoded');
 Json.send('app_id='+args.ID+'&sentence='+args.TEXT);
     }
 }
-Scratch.extensions.register(new Scratch3Api())
+Scratch.extensions.register(new Api())
